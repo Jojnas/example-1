@@ -1,0 +1,259 @@
+/* --- BASE RULES --- */
+html {
+  box-sizing: border-box;
+
+  font-size: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875em; /* 14/16 */
+  line-height: 1.5em; /* 21/14 */
+  color: #fff;
+
+  background: url('../img/bg-main.gif');
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #f39c12;
+}
+
+/* --- LAYOUT RULES --- */
+
+.clearfix:before,
+.clearfix:after {
+  content:"";
+  display:table;
+}
+.clearfix:after {
+  clear:both;
+}
+.clearfix {
+  zoom:1;
+}
+
+
+/* --- MODULE RULES --- */
+
+main {
+  max-width:870px;
+  position:relative;
+}
+
+h1,h2, h3 {
+  font-family: 'Oswald', sans-serif;
+  line-height: 1em;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.push-left {
+  float: left;
+}
+
+.push-right {
+  float: right;
+}
+
+article, aside {
+  padding: 1.875em; /* 30/16 */
+}
+
+article {
+	margin-left: 240px;
+}
+
+aside {
+  width: 240px;
+  background-color: #202020;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+
+.logo {
+  font-size: 42px;
+  margin-bottom: 0;
+}
+
+.logo a{
+  font-family: 'Yellowtail', cursive;
+  color: #f39c12;
+  text-transform: none;
+}
+
+.tagline {
+  font-size: 11px;
+  padding-left: 8px;
+}
+
+nav {
+  margin-top: 40px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+
+}
+
+.active a {
+	color: #f39c12;
+}
+
+nav .active,
+nav ul > li:last-child {
+  margin-top:20px;
+
+}
+
+article {
+  width: 630px;
+}
+
+h1 {
+  color: #f39c12;
+  font-size: 49px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+.about-me p, .about-me footer {
+  margin-left: 221px;
+}
+
+blockquote p {
+  text-transform: uppercase;
+  color: #f39c12;
+  font-family: 'Oswald', sans-serif;
+}
+
+em {
+  font-weight: 300;
+  font-style: italic;
+
+}
+
+.about-me {
+  margin-top: 40px;
+}
+
+.about-me > p {
+  margin-bottom: 40px;
+}
+
+blockquote > p {
+  margin-bottom: 18px;
+}
+
+.progress {
+  background-color: #202020;
+  color: #202020;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+.bar {
+  background-color: #f39c12;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.bar, .progress {
+  border-radius: 5px;
+  height: 45px;
+}
+
+h3 {
+  font-size: 21px;
+  margin: 38px 0 28px 0;
+}
+
+.progress p {
+  padding: 13px;
+  text-align: left;
+  z-index: 1;
+  position: relative;
+}
+
+.progress span {
+  color: #fff;
+  margin: 0;
+}
+
+
+
+.fa {
+	margin: 0;
+	margin-top: 33px;
+
+
+}
+
+.box-social {
+	font-family: 'Open Sans', sans-serif;
+	color: #fff; 
+}
+
+aside h3 {
+	margin-top: 40px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  margin: 0;
+	margin-top: 33px;
+}
+
+.tweet a {
+	color: #999;
+} 
+
+.horizontal-nav {
+	margin: 10px 0 0 0;
+	padding: 0;
+}
+
+.horizontal-nav .fa {
+	margin: 0;
+}
+
+.horizontal-nav li {
+	float: left;
+	margin-right: 15px;
+}
+
+.tweet a:hover {
+	color: #f39c12;
+} 
+
+.tweet p {
+	font-size: 11px;
+}
+
+.fa-twitter {
+	font-size: 21px;
+}
+
+.copy {
+	font-size: 11px;
+	margin-top: 15px;
+}
+
